@@ -1,0 +1,19 @@
+.major-panel
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	grid-gap: 1rem;
+	grid-row-gap: 1rem;
+}
+
+.minor-panel
+{
+	padding: 10px;
+	font-family: sans-serif;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.minor-panel:nth-child(even)
+{
+	border: 1px solid blue;
