@@ -1,9 +1,12 @@
 .major-panel
 {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 	grid-gap: 1rem;
 	grid-row-gap: 1rem;
+	max-width: 840px;
+	margin: auto;
+	padding: 20px 0;
 }
 
 .minor-panel
@@ -17,3 +20,9 @@
 .minor-panel:nth-child(even)
 {
 	border: 1px solid blue;
+}
+
+img
+{
+	width: 80%;
+}

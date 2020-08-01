@@ -33,7 +33,16 @@
 					<li><a href="https://the-blueprints.com/">Blueprints</a></li>
 					<li><a href="https://www.desmos.com/calculator">Graphing</a></li>
 				</ul>
-			   </div>
+			</div>
+
+			<div class="minor-panel">
+				<h4>Resources</h4>
+				<ul>
+					<li><a href="http://neilblevins.com/cg_education/cg_education.htm">CG Education</a></li>
+					<li><a href="https://www.youtube.com/watch?v=wtJeoPAGbfY">Principles of Animation</a></li>
+					<li><a href="https://www.youtube.com/watch?v=_1j5Tf6ulII">Animation Tricks of the Trade (2016)</a></li>
+					<li><a href="https://www.youtube.com/watch?v=zEYITZUHpo4">Animation Tricks of the Trade (2019)</a></li>
+			</div>
 			   
 			<div class="minor-panel">
 				<h4>Oddities</h4>
@@ -43,5 +52,43 @@
 					<li><a href="https://www.thispersondoesnotexist.com/">Generate fake faces</a></li>
 			</div>
         </div>
+
+		<div class="major-panel">
+            <div class="minor-panel">
+				<h3>Unity Audio Delay Bug</h3>
+				<p>
+					If there is am audio delay, go to 'Project Settings -> Audio -> DSP Buffersize' and set it to 'Best Latency'.  This delay also happens with Bluetooth speakers or headphones.
+				</p>
+			</div>
+
+			<div class="minor-panel">
+				<h3>Unity Particles Inherit Velocity Bug</h3>
+				<p>
+					When setting a particle system to inherit initial velocity from the emitter, the particles cannot be emitted at start.  Set a delay to something like 0.01
+				</p>
+			</div>
+
+			<div class="minor-panel">
+				<h3>Unity Euler Angle Wrapping</h3>
+				<p>
+					When setting euler angles to set transform rotation, remember to subtract 180 from any axis that is greater or equal to 360.
+				</p>
+			</div>
+
+			<div class="minor-panel">
+				<h3>Blender f-curve Modifiers</h3>
+				<p>
+					When making some looping movement when you do not want the root animation to be in the final animation, like a walk cycle, f-curve modifiers can do non-destructive root movement for you.
+					<div>
+						<a href="images/f-curve-animation-modifier.jpg">
+							<img src="images/f-curve-animation-modifier.jpg">
+						</a>
+						<div>
+							<small>this example moves the root bone 1 meter in 30 frames</small>
+						</div>
+					</div>
+				</p>
+			</div>
+		</div>
     </body>
 </html>
