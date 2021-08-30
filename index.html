@@ -157,6 +157,13 @@
 					In the blend importer rig tab, choose to create a avatar from model and select the root bone (most likely hips is the best root-deform bone).  In the blend import animation tab, you can choose what part of the root motion you want to bake out per animation: rotation, Y, or XZ.  Make sure to use the avatar on the animator component. 
 				</p>
 			</div>
+
+			<div class="minor-panel">
+				<h3>Blender To Unity Export (2.9)</h3>
+				<p>
+					To properly export blends, armatures included, open the export .FBX options in Blender.  Set the scale to 0.01.  In the armature tab, set the primary bone axis to Z and the secondary bone axis to -X.  Turn off leaf bones.  The objects still require their rotation to be applied at -90 on the X axis though.
+				</p>
+			</div>
 		</div>
     </body>
 </html>
