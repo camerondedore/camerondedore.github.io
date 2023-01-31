@@ -81,7 +81,6 @@
 					<li><a href="https://gist.github.com/paulloz/30ae499c1fc580a2f3ab9ecebe80d9ba">VS Code with Godot</a></li>
 					<li><a href="https://docs.godotengine.org/en/stable/tutorials/export/exporting_projects.html">Godot Project Export</a></li>
 					<li><a href="https://docs.godotengine.org/en/stable/tutorials/3d/baked_lightmaps.html">Godot Lightmapping</a></li>
-					<li><a href="https://docs.godotengine.org/en/stable/tutorials/3d/baked_lightmaps.html">Godot Lightmapping</a></li>
 				</ul>
 			</div>
         </div>
@@ -191,6 +190,13 @@
 				<h3>Blender To Unity Export (2.9)</h3>
 				<p>
 					To properly export blends, armatures included, open the export .FBX options in Blender.  Set the scale to 0.01.  In the armature tab, set the primary bone axis to Z and the secondary bone axis to -X.  Turn off leaf bones.  The objects still require their rotation to be applied at -90 on the X axis though.
+				</p>
+			</div>
+
+			<div class="minor-panel">
+				<h3>Convert linked duplicates to unique meshes in Blender (2.9)</h3>
+				<p>
+					To use linked duplicates as level kits to later merge meshes, the linked data needs to be made unique.  This can be done by going to Object -> Relations -> Make Single User -> Objext and Data.  Now that the linked duplicates have their own unique meshes, they can be joined into a bigger level mesh.
 				</p>
 			</div>
 		</div>
