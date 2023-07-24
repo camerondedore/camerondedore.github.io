@@ -200,6 +200,22 @@
 					To use linked duplicates as level kits to later merge meshes, the linked data needs to be made unique.  This can be done by going to Object -> Relations -> Make Single User -> Objext and Data.  Now that the linked duplicates have their own unique meshes, they can be joined into a bigger level mesh.
 				</p>
 			</div>
+
+			<div class="minor-panel">
+				<h3>Godot 4 - Change Node3D's Parent</h3>
+				<p>
+					If the node just has its parent changed, it will not respect its old global transform values.
+					<br>
+					<code>
+						var childGlobalPosition = myNode.GlobalPosition;
+						var childGlobalRotation = myNode.GlobalRotation;
+						myNode.GetParent().RemoveChild(myNode);
+						GetTree().CurrentScene.AddChild(myNode);
+						myNode.GlobalPosition = childGlobalPosition;
+						myNode.GlobalRotation = childGlobalRotation;
+					</code>
+				</p>
+			</div>
 		</div>
     </body>
 </html>
