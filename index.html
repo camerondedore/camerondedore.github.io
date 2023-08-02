@@ -216,6 +216,17 @@
 					</code>
 				</p>
 			</div>
+
+			<div class="minor-panel">
+				<h3>Turbulance VS Time with Trig Functions</h3>
+				<p>
+					Time should not be used to define the frequency of the trig waves.  To add an independant turbulance to the waves, there needs to be another input that defines the wave.  For something like a shader, the world position is usually used.  Time then needs to be used to travel down the defined wave.  Here's a sample:
+					<br>
+					<code>
+						wave = SIN(position * turbulance + time * speed) * amplitude
+					</code>
+				</p>
+			</div>
 		</div>
     </body>
 </html>
